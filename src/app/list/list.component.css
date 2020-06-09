@@ -1,0 +1,42 @@
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+}
+
+aside {
+  align-self: center;
+}
+
+.content ul {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: center space-around;
+  list-style-type: none;
+}
+
+.content-item {
+  padding: 0.5rem;
+  border: 2px solid #7C5055;
+  border-radius: 1rem;
+
+}
+
+.content-item:hover {
+  border-color: #BABD89;
+}
+
+.content-item:hover a {
+  color: #BABD89;
+
+}
+
+.content-item img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: .5rem;
+}
+
+.content-item figcaption {
+  text-align: center;
+}

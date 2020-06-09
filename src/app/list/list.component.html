@@ -1,0 +1,18 @@
+<nav>
+  <aside class="header">
+    <h2> Примеры работ </h2>
+    <p> Собрание выполненных на заказ работ</p>
+  </aside>
+  <div class="content">
+    <ul>
+      <li class="content-item" *ngFor="let item of items">
+        <a href="/item/{{item.id}}" >
+          <figure>
+            <img src="{{item.img_url}}" alt="">
+            <figcaption>{{item.name}}</figcaption>
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
