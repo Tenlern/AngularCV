@@ -1,20 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { CvComponent } from './cv/cv.component';
-import { ContentComponent } from './content/content.component';
-import { ListComponent } from './list/list.component';
+import {AppComponent} from './app.component';
+import {CvComponent} from './cv/cv.component';
+import {AppRoutingModule} from './app-routing.module';
+import {ProjectsModule} from './projects/projects.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     CvComponent,
-    ContentComponent,
-    ListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ProjectsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

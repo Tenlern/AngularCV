@@ -26,9 +26,18 @@ aside {
   border-color: #BABD89;
 }
 
+.content-item a {
+  color: black;
+  text-decoration: none;
+}
+
 .content-item:hover a {
   color: #BABD89;
+  text-decoration: none;
+}
 
+.content-item figure {
+  margin: 0;
 }
 
 .content-item img {

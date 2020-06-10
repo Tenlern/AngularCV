@@ -6,9 +6,9 @@
   <div class="content">
     <ul>
       <li class="content-item" *ngFor="let item of items">
-        <a href="/item/{{item.id}}" >
+        <a routerLink="/projects/{{item.id}}" >
           <figure>
-            <img src="{{item.img_url}}" alt="">
+            <img src="{{item.icon_url}}" alt="">
             <figcaption>{{item.name}}</figcaption>
           </figure>
         </a>
