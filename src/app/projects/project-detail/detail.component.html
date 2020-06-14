@@ -1,7 +1,19 @@
-<div *ngIf="project">
-  <a (click)="close()">Х</a>
-  <h3>{{project.name}}</h3>
-  <figure>
-    <img src="{{project.img_url}}">
-  </figure>
-</div>
+<article class="project" *ngIf="project">
+  <section class="description">
+    <h3>{{project.name}}</h3>
+    <p>
+      {{project.description}}
+    </p>
+  </section>
+  <section class="img-block">
+    <figure>
+      <img src="{{project.img_url}}">
+    </figure>
+  </section>
+  <section>
+    PlaceHolder
+  </section>
+  <section>
+    PlaceHolder
+  </section>
+</article>

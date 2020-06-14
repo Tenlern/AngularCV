@@ -1,18 +1,54 @@
-<nav>
-  <aside class="header">
-    <h2> Примеры работ </h2>
-    <p> Собрание выполненных на заказ работ</p>
-  </aside>
-  <div class="content">
-    <ul>
-      <li class="content-item" *ngFor="let item of items">
+<!--<nav>-->
+<!--  <aside class="header">-->
+<!--    <h2> Примеры работ </h2>-->
+<!--    <p> Собрание выполненных на заказ работ</p>-->
+<!--  </aside>-->
+<!--  <div class="content">-->
+<!--    <ul>-->
+<!--      <li class="content-item" *ngFor="let item of items">-->
+<!--        <a routerLink="/projects/{{item.id}}" >-->
+<!--          <figure>-->
+<!--            <img src="{{item.icon_url}}" alt="">-->
+<!--            <figcaption>{{item.name}}</figcaption>-->
+<!--          </figure>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<div class="projects">
+  <header>
+    <h1>Портфолио</h1>
+    <h2>Примеры выполненных работ</h2>
+    <hr>
+  </header>
+
+  <section class="projects-row">
+    <ul class="categories">
+      <li>
+        <a href="">Все</a>
+      </li>
+
+      <li>
+        <a href="">Дизайн</a>
+      </li>
+
+      <li>
+        <a href="">Веб</a>
+      </li>
+    </ul>
+
+    <div class="list">
+      <article class="item" *ngFor="let item of items">
         <a routerLink="/projects/{{item.id}}" >
           <figure>
-            <img src="{{item.icon_url}}" alt="">
+            <img src="{{item.icon_url}}" alt="{{ item.name + '_icon'}}">
             <figcaption>{{item.name}}</figcaption>
           </figure>
         </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+      </article>
+    </div>
+
+  </section>
+</div>

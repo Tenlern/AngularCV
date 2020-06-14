@@ -1,18 +1,20 @@
-<header>
-  <nav>
-    <ul>
-      <li>
-        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Главная</a>
-      </li>
-      <li>
-        <a routerLink="home" routerLinkActive="active">Обо мне</a>
-      </li>
-      <li>
-        <a routerLink="projects" routerLinkActive="active">Проекты</a>
-      </li>
-    </ul>
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Главная</a>
+    <a routerLink="home" routerLinkActive="active">
+      <i>CV</i>
+      Обо мне
+    </a>
+    <a routerLink="projects" routerLinkActive="active">
+      <i>Projects</i>
+      Портфолио
+    </a>
+    <a routerLink="contacts" routerLinkActive="active">
+      <i>Contancs</i>
+      Обратная связь
+    </a>
   </nav>
-</header>
+</aside>
 <main>
   <router-outlet></router-outlet>
 </main>
