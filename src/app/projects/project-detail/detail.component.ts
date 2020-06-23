@@ -4,6 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import {Project} from '../../interfaces/project';
 import {ProjectsService} from '../projects.service';
 import {toNumbers} from '@angular/compiler-cli/src/diagnostics/typescript_version';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-content',
@@ -14,18 +15,17 @@ export class DetailComponent implements OnInit {
   project: Project;
 
   constructor(
-    private location: Location,
+    private title: Title,
     private route: ActivatedRoute,
     private projectsService: ProjectsService
-  ) { }
-
-  ngOnInit(): void {
+  ) {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.project = this.projectsService.getOne(id);
+    projectsService.getById(id).subscribe(res => this.project = res);
   }
 
-  close(): void {
-    this.location.back();
+  ngOnInit(): void {
+    console.log(this.project);
+    this.title.setTitle(this.project.name);
   }
 
 }

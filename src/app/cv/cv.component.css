@@ -1,59 +1,59 @@
-.cv {
-  font-family: "Avenir Next", serif;
-  padding: 1rem 2rem;
-  /*border: 3px outset #723D46;*/
-  background-color: white;
-  text-align: center;
-}
+/*.cv {*/
+/*  font-family: "Avenir Next", serif;*/
+/*  padding: 1rem 2rem;*/
+/*  !*border: 3px outset #723D46;*!*/
+/*  background-color: white;*/
+/*  text-align: center;*/
+/*}*/
 
-.container {
-  display: flex;
-  flex-flow: nowrap column;
-  align-items: center;
-}
+/*.container {*/
+/*  display: flex;*/
+/*  flex-flow: nowrap column;*/
+/*  align-items: center;*/
+/*}*/
 
-.about {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 75%;
-}
+/*.about {*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  max-width: 75%;*/
+/*}*/
 
-.profile figure {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 150px;
-  height: auto;
-}
+/*.profile figure {*/
+/*  margin-right: auto;*/
+/*  margin-left: auto;*/
+/*  max-width: 150px;*/
+/*  height: auto;*/
+/*}*/
 
-.profile img {
-  max-width: 100%;
-  height: auto;
-}
+/*.profile img {*/
+/*  max-width: 100%;*/
+/*  height: auto;*/
+/*}*/
 
-.contacts ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
+/*.contacts ul {*/
+/*  padding: 0;*/
+/*  list-style: none;*/
+/*  text-align: center;*/
+/*}*/
 
-.skills {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
-}
+/*.skills {*/
+/*  display: flex;*/
+/*  flex-flow: row wrap;*/
+/*  justify-content: space-around;*/
+/*  align-content: center;*/
+/*}*/
 
-.skills li{
-  text-align: start;
-}
+/*.skills li{*/
+/*  text-align: start;*/
+/*}*/
 
-.skill-item {
-  max-width: 33%;
-}
+/*.skill-item {*/
+/*  max-width: 33%;*/
+/*}*/
 
-.skill-item ul {
-  padding: 0;
-}
+/*.skill-item ul {*/
+/*  padding: 0;*/
+/*}*/
 
 /*.cv .profile {*/
 /*  padding: 0 .5rem;*/

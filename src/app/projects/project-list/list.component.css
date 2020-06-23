@@ -50,46 +50,46 @@
 /*  text-align: center;*/
 /*}*/
 
-.projects {
-  background-color: white;
-  display: flex;
-  flex-flow: nowrap column;
-  align-items: center;
-  text-align: center;
-}
+/*.projects {*/
+/*  background-color: white;*/
+/*  display: flex;*/
+/*  flex-flow: nowrap column;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*}*/
 
-.categories {
-  display: flex;
-  flex-flow: nowrap row;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-}
+/*.categories {*/
+/*  display: flex;*/
+/*  flex-flow: nowrap row;*/
+/*  justify-content: space-around;*/
+/*  list-style: none;*/
+/*  padding: 0;*/
+/*}*/
 
-.categories li:not(:last-child)::after {
-  content: '/';
-  margin: 0 auto;
-}
+/*.categories li:not(:last-child)::after {*/
+/*  content: '/';*/
+/*  margin: 0 auto;*/
+/*}*/
 
-.categories a:hover {
-  text-decoration: underline;
-}
+/*.categories a:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
 
-header h1 {
-  margin-bottom: 0;
-}
+/*header h1 {*/
+/*  margin-bottom: 0;*/
+/*}*/
 
-header h2 {
-  margin-top: 0;
-}
+/*header h2 {*/
+/*  margin-top: 0;*/
+/*}*/
 
-.list {
-    display: flex;
-    flex-flow: row wrap;
-    place-content: center space-around;
-    list-style-type: none;
-}
+/*.list {*/
+/*    display: flex;*/
+/*    flex-flow: row wrap;*/
+/*    place-content: center space-around;*/
+/*    list-style-type: none;*/
+/*}*/
 
-.list a:hover {
+/*.list a:hover {*/
 
-}
+/*}*/

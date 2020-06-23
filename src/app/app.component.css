@@ -1,49 +1,7 @@
 /* App Component Style */
-.sidebar {
-  /*background-color: #DD5540;*/
-  /*text-decoration-color: white;*/
-}
 
-.sidebar-nav {
-  border-radius: 1rem;
-  border: 1px solid #DD5540;
-}
-
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: nowrap column;
-  place-content: center center;
-  list-style: none;
-  text-align: center;
-}
-
-.sidebar li {
-  border: 1px solid gray;
-  /*margin: .25rem 0;*/
-  /*padding: .25rem;*/
-}
-
-.sidebar li:hover {
-  background-color: #DD5540;
-  /*border: 1px solid #DD5540;*/
-}
-
-.sidebar li a {
-  color: black;
-  margin: 0 auto;
-}
-
-.sidebar li a i {
-  display: block;
-  /*margin: 0;*/
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-header a:active {
-  text-decoration: underline;
+.menu-list a {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
 }
