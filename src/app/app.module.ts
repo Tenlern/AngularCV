@@ -20,7 +20,7 @@ import {AngularFireDatabase, AngularFireDatabaseModule} from '@angular/fire/data
     ProjectsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
+    AngularFirestoreModule,
     BrowserAnimationsModule
   ],
   providers: [

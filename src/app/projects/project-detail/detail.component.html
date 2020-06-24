@@ -38,12 +38,8 @@
     <div class="content box">
       <h2>Описание</h2>
       <ng-template ngFor let-text_block [ngForOf]="project.text" let-i="text_block">
-        <p *ngIf="text_block.type == 'text'">
-          {{ text_block.content }}
-        </p>
-        <blockquote class="has-text-centered" *ngIf="text_block.type == 'quote'">
-          {{ text_block.content }}
-        </blockquote>
+        <p *ngIf="text_block.type == 'text'"  [innerHTML]="text_block.content"></p>
+        <blockquote class="has-text-centered" *ngIf="text_block.type == 'quote'" [innerHTML]="text_block.content"></blockquote>
       </ng-template>
 <!--      <p>-->
 <!--        Отражение боли современного мира, несущегося в бешеной скоростью к неизвестному будущему, является задачей-->
@@ -68,8 +64,7 @@
       <div class="message-body has-text-centered">
         <h5 class="title">Мнение заказчика</h5>
 <!--        <h5 class="subtitle">Батя</h5>-->
-        <p class="content">
-          {{ project.review }}
+        <p class="content" [innerHTML]="project.review">
 <!--          Заебись, аж обои назад приклеились-->
         </p>
       </div>

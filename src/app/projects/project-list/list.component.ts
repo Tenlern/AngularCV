@@ -29,7 +29,7 @@ export class ListComponent implements OnInit {
     this.route.fragment.subscribe(
       fragment => this.filterList(fragment)
     );
-
+    console.log(this.items);
   }
 
   filterList(tag: string): void {
@@ -39,7 +39,10 @@ export class ListComponent implements OnInit {
     };
     if (tag) {
       this.filter = tag;
-      //this.projectService.getAllByTag(foreign[tag]).subscribe(res => this.items = res);
+      this.projectService.getByTag(foreign[tag]).subscribe(res => {
+        this.items = res;
+        console.log(res);
+      });
     }
     else {
       this.filter = 'root';

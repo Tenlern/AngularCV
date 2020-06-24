@@ -4,6 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {CvComponent} from './cv/cv.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {path: 'home', component: CvComponent},
 ];
 

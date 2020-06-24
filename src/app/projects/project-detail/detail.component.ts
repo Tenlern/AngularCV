@@ -5,6 +5,7 @@ import {Project} from '../../interfaces/project';
 import {ProjectsService} from '../projects.service';
 import {toNumbers} from '@angular/compiler-cli/src/diagnostics/typescript_version';
 import {Title} from '@angular/platform-browser';
+import {first} from 'rxjs/operators';
 
 @Component({
   selector: 'app-content',
@@ -19,13 +20,23 @@ export class DetailComponent implements OnInit {
     private route: ActivatedRoute,
     private projectsService: ProjectsService
   ) {
-    const id = +this.route.snapshot.paramMap.get('id');
-    projectsService.getById(id).subscribe(res => this.project = res);
+    const id = this.route.snapshot.paramMap.get('id');
+    projectsService.getById(id).subscribe(res => {
+      title.setTitle(res.name);
+      this.project = res;
+    });
+    // projectsService.getById(id).pipe(first<Project>()).toPromise()
+    //   .then(
+    //     item => {
+    //       title.setTitle(item.name);
+    //       this.project = item;
+    //     }
+    //     );
   }
 
   ngOnInit(): void {
     console.log(this.project);
-    this.title.setTitle(this.project.name);
+
   }
 
 }
