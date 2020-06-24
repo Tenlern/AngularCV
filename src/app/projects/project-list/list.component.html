@@ -1,0 +1,62 @@
+<article class="projects">
+  <header class="hero has-text-centered">
+    <div class="hero-body py-5">
+      <div class="container">
+        <h1 class="title is-1">Портфолио</h1>
+        <h3 class="subtitle is-3">Примеры выполненных работ</h3>
+      </div>
+    </div>
+
+
+  </header>
+
+  <section class="section py-5">
+    <div class="container">
+      <div class="tabs is-boxed is-centered">
+        <ul class="">
+          <li [class.is-active]="filter == 'root'">
+            <a routerLink="./" (click)="filterList('')">
+              <span class="icon is-small"><i class="fas fa-stream"></i></span>
+              <span>Все</span>
+            </a>
+          </li>
+
+          <li [class.is-active]="filter == 'design'">
+            <a routerLink="./" fragment="design" (click)="filterList('design')">
+              <span class="icon is-small"><i class="fas fa-edit"></i></span>
+              <span>Дизайн</span>
+            </a>
+          </li>
+
+          <li [class.is-active]="filter == 'web'">
+            <a routerLink="./" fragment="web" (click)="filterList('web')">
+              <span class="icon is-small"><i class="fas fa-globe"></i></span>
+              <span>Веб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="columns is-multiline is-mobile">
+        <article class="column is-6 card" *ngFor="let item of items">
+          <a [routerLink]="['./', item.id]">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="{{item.img_url}}" alt="{{ item.name + '_icon'}}">
+              </figure>
+            </div>
+            <div class="card-content content">
+              <div class="content">
+                <h3>{{item.name}}</h3>
+                <div class="tags">
+                  <span class="tag" *ngFor="let tag of item.tags">{{tag | titlecase}}</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</article>

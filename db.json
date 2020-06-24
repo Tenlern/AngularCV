@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Test 1",
+      "description": "Жоп-арт, отражающий боль от архитектуры и отрицающий влияние бога на мир человека",
+      "icon_url": "/assets/img/projects/icon_1.jpg",
+      "img_url": "/assets/img/projects/1.jpeg",
+      "tags": [
+        "концепт",
+        "дизайн",
+        "жоп-арт"
+      ],
+      "text": [
+        {
+          "content": "texttexttextextextext",
+          "type": "text"
+        },
+        {
+          "content": "quotequotequote",
+          "type": "quote"
+        }
+      ],
+      "review": "ZBS"
+    },
+    {
+      "id": 2,
+      "name": "Test 2",
+      "description": "Шрифт боли",
+      "icon_url": "/assets/img/projects/icon_2.jpg",
+      "img_url": "/assets/img/projects/2.jpeg",
+      "tags": [
+        "шрифт",
+        "дизайн"
+      ],
+      "text": [],
+      "review": "ZBS"
+    },
+    {
+      "id": 3,
+      "name": "Test 3",
+      "description": "Боль, просто боль. Не знаю, что вы тут хотите увидеть",
+      "icon_url": "/assets/img/projects/icon_3.jpg",
+      "img_url": "/assets/img/projects/3.jpeg",
+      "tags": [
+        "концепт",
+        "веб"
+      ],
+      "text": [],
+      "review": "ZBS"
+    }
+  ]
+}

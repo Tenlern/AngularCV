@@ -1,0 +1,29 @@
+/*!* Global Styles *!*/
+
+* {
+  font-family: Helvetica, serif;
+  font-size: 20px;
+  /*background-color: #eaeaea;*/
+}
+
+app-root {
+  margin: 0!important;
+  min-height: 100vh;
+}
+
+/*//body {*!*!*/
+/*//  padding: 0 1.5rem;*!*!*/
+/*//}*!*!*/
+/*/!*!/app-root {*!*!*/
+/*//  display: grid;*!*!*/
+/*//  grid-template-columns: auto 1fr auto;*!*!*/
+/*//  grid-template-rows: 1fr;*!*!*/
+/*//  !*column-gap: 0.5rem;*!*!*!*/
+/*//}*!*!*/
+/*/!*!/a {*!*!*/
+/*//  color: black;*!*!*/
+/*//  text-decoration: none;*!*!*/
+/*//}*!*!*/
+/*/!*!/hr {*!*!*/
+/*//  border-color: #E06552;*!*!*/
+/*//}*!*!*/

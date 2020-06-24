@@ -1,0 +1,74 @@
+<article class="project" *ngIf="project">
+  <section class="hero is-link">
+    <div class="hero-body">
+      <h3 class="title">{{project.name}}</h3>
+      <p class="subtitle">
+        {{project.description}}
+      </p>
+    </div>
+    <figure class="image">
+      <img src="{{project.img_url}}">
+    </figure>
+  </section>
+
+  <section class="section py-4">
+    <div class="level is-mobile">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Дней, потрачено</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Оценило</p>
+          <p class="title">69</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Стоило</p>
+          <p class="title">789 банок пива</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section py-4">
+    <div class="content box">
+      <h2>Описание</h2>
+      <ng-template ngFor let-text_block [ngForOf]="project.text" let-i="text_block">
+        <p *ngIf="text_block.type == 'text'"  [innerHTML]="text_block.content"></p>
+        <blockquote class="has-text-centered" *ngIf="text_block.type == 'quote'" [innerHTML]="text_block.content"></blockquote>
+      </ng-template>
+<!--      <p>-->
+<!--        Отражение боли современного мира, несущегося в бешеной скоростью к неизвестному будущему, является задачей-->
+<!--        современного жоп-арта. Это открытый протест против действия.-->
+<!--      </p>-->
+<!--      <blockquote class="has-text-centered">-->
+<!--        <p>-->
+<!--          Человечество прошло длинный путь, но не должно уничтожить себя на пути к величию-->
+<!--          <br>-->
+<!--          @ Славик быстрый-->
+<!--        </p>-->
+<!--      </blockquote>-->
+<!--      <p>-->
+<!--        Красные линии передают боль, гнев, страх человека;-->
+<!--        Желтые - наплевательство локомотива судьбы на личность;-->
+<!--        А фоном выступают тревожные тонкие полосы голубого и современная архитектура, как сокрытый за занавесом ужас-->
+<!--      </p>-->
+    </div>
+
+
+    <div class="message is-">
+      <div class="message-body has-text-centered">
+        <h5 class="title">Мнение заказчика</h5>
+<!--        <h5 class="subtitle">Батя</h5>-->
+        <p class="content" [innerHTML]="project.review">
+<!--          Заебись, аж обои назад приклеились-->
+        </p>
+      </div>
+    </div>
+
+  </section>
+</article>
